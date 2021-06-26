@@ -1,4 +1,9 @@
-function temperatureConverter(valNum) {
+function footToMeter(valNum) {
     valNum = parseFloat(valNum);
-    document.getElementById("outputCelsius").innerHTML = (valNum - 32) / 1.8;
+    document.getElementById("outputMeters").innerHTML = 0.305 * valNum;
+}
+
+function meterToFoot(valNum) {
+    valNum = parseFloat(valNum);
+    document.getElementById("outputFeet").innerHTML = 3.279 * valNum;
 }
